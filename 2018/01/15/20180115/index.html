@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="服务-nginx-jit参考文档原生的 nginx 安装可以参考 : emptyTengine 安装: empty">
+<meta name="description" content="YAF - 使用配置####1、PHP error 日志 phpinfo-&amp;gt;core-&amp;gt;error_log-&amp;gt;对应的日志文件，有问题查看这里。 ####2、服务器重写规则 laruence博客路由规则（全）1234#ngixn配置if (!-e $request_filename) &amp;#123;rewrite ^/(.*)  /index.php/$1 last;&amp;#125; #">
 <meta property="og:type" content="article">
 <meta property="og:title" content="foolint">
-<meta property="og:url" content="https://foolint.github.io/2018/01/12/20180112/index.html">
+<meta property="og:url" content="https://foolint.github.io/2018/01/15/20180115/index.html">
 <meta property="og:site_name" content="foolint">
-<meta property="og:description" content="服务-nginx-jit参考文档原生的 nginx 安装可以参考 : emptyTengine 安装: empty">
+<meta property="og:description" content="YAF - 使用配置####1、PHP error 日志 phpinfo-&amp;gt;core-&amp;gt;error_log-&amp;gt;对应的日志文件，有问题查看这里。 ####2、服务器重写规则 laruence博客路由规则（全）1234#ngixn配置if (!-e $request_filename) &amp;#123;rewrite ^/(.*)  /index.php/$1 last;&amp;#125; #">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-12T02:30:50.398Z">
+<meta property="og:updated_time" content="2018-01-15T08:02:32.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="foolint">
-<meta name="twitter:description" content="服务-nginx-jit参考文档原生的 nginx 安装可以参考 : emptyTengine 安装: empty">
+<meta name="twitter:description" content="YAF - 使用配置####1、PHP error 日志 phpinfo-&amp;gt;core-&amp;gt;error_log-&amp;gt;对应的日志文件，有问题查看这里。 ####2、服务器重写规则 laruence博客路由规则（全）1234#ngixn配置if (!-e $request_filename) &amp;#123;rewrite ^/(.*)  /index.php/$1 last;&amp;#125; #">
 
 
 
@@ -119,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="https://foolint.github.io/2018/01/12/20180112/"/>
+  <link rel="canonical" href="https://foolint.github.io/2018/01/15/20180115/"/>
 
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://foolint.github.io/2018/01/12/20180112/">
+    <link itemprop="mainEntityOfPage" href="https://foolint.github.io/2018/01/15/20180115/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="foolint">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-12T10:30:50+08:00">
-                2018-01-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-15T16:02:32+08:00">
+                2018-01-15
               </time>
             
 
@@ -299,7 +299,21 @@
       
 
       
-        <h2 id="服务-nginx-jit"><a href="#服务-nginx-jit" class="headerlink" title="服务-nginx-jit"></a>服务-nginx-jit</h2><h3 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h3><p>原生的 nginx 安装可以参考 : <a href="https://github.com/openresty/lua-nginx-module#installation" target="_blank" rel="noopener">empty</a><br>Tengine 安装: <a href="https://help.aliyun.com/knowledge_detail/41336.html?spm=5176.11065259.1996646101.searchclickresult.157b8ec06Ql2Qy" target="_blank" rel="noopener">empty</a></p>
+        <h2 id="YAF-使用"><a href="#YAF-使用" class="headerlink" title="YAF - 使用"></a>YAF - 使用</h2><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>####1、PHP error 日志 phpinfo-&gt;core-&gt;error_log-&gt;对应的日志文件，有问题查看这里。</p>
+<p>####2、服务器重写规则 <a href="http://yaf.laruence.com/manual/tutorial.firstpage.html" target="_blank" rel="noopener">laruence博客路由规则（全）</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#ngixn配置</span></span><br><span class="line"><span class="keyword">if</span> (!-e <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">rewrite ^/(.*)  /index.php/<span class="variable">$1</span> last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>####3、框架配置</p>
+<p>#####预定义常量</p>
+<p>#####环境配置项 <a href="http://yaf.laruence.com/manual/yaf.ini.html" target="_blank" rel="noopener">反应在 phpinfo YAF扩展的配置信息</a><br>More info: <a href="https://foolint.github.io/">empty</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">多说一句：PHP总共有4个配置指令作用域：（PHP中的每个指令都有自己的作用域，指令只能在其作用域中修改，不是任何地方都能修改配置指令的）</span><br><span class="line">PHP_INI_PERDIR：指令可以在php.ini、httpd.conf或.htaccess文件中修改</span><br><span class="line">PHP_INI_SYSTEM：指令可以在php.ini 和 httpd.conf 文件中修改</span><br><span class="line">PHP_INI_USER：指令可以在用户脚本中修改</span><br><span class="line">PHP_INI_ALL：指令可以在任何地方修改</span><br></pre></td></tr></table></figure></p>
+<p>####4、自定义配置(项目中代码的配置项)</p>
+<p>#####基础环境配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">;如果没有指定 bootstrap 的路径，这里会默认选择 directory.</span><br><span class="line">application.directory = APPLICATION_PATH  &quot;/application/&quot;</span><br><span class="line">application.dispatcher.catchException = TRUE</span><br><span class="line">application.environ = dev</span><br><span class="line">; Cache config</span><br><span class="line">application.cache_config              = 1</span><br><span class="line">; Default controller </span><br><span class="line">application.dispatcher.defaultController = Index</span><br><span class="line">; Default action</span><br><span class="line">application.dispatcher.defaultAction  = index</span><br><span class="line">; Template suffix</span><br><span class="line">application.view.ext                  = &quot;phtml&quot;</span><br><span class="line">;声明存在的模块名,多个用,分隔</span><br><span class="line">application.modules                   = Index,User,Admin,Api</span><br></pre></td></tr></table></figure></p>
+<p>#####数据库相关，这里配置建议区分 dev 与 product，或者更多。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">; 开发环境</span><br><span class="line">[dev : common]</span><br><span class="line"></span><br><span class="line">; MySQL config</span><br><span class="line">TYPE = mysql</span><br><span class="line">READ_HOST = 127.0.0.1</span><br><span class="line">READ_PORT = 3306</span><br><span class="line">READ_USER = user</span><br><span class="line">READ_PSWD = pwd</span><br><span class="line">WRITE_HOST = 127.0.0.1</span><br><span class="line">WRITE_PORT = 3306</span><br><span class="line">WRITE_USER = user</span><br><span class="line">WRITE_PSWD = pwd</span><br><span class="line">Default = dbname</span><br><span class="line"></span><br><span class="line">[product : common]</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
+<p>以下为待整理列表：</p>
+<p>#######自动加载</p>
+<p>#######插件使用</p>
+<p>#######路由</p>
+<p>#######命令行</p>
+<p>#######异常和错误使用</p>
+<p>#######内建类</p>
 
       
     </div>
@@ -324,7 +338,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/05/hello-world/" rel="next" title="">
+              <a href="/2018/01/12/20180112/" rel="next" title="">
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -333,10 +347,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/15/20180115/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -450,7 +460,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#服务-nginx-jit"><span class="nav-number">1.</span> <span class="nav-text">服务-nginx-jit</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文档"><span class="nav-number">1.1.</span> <span class="nav-text">参考文档</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#YAF-使用"><span class="nav-number">1.</span> <span class="nav-text">YAF - 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.1.</span> <span class="nav-text">配置</span></a></li></ol></li></ol></div>
             
 
           </div>
